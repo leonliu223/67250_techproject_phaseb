@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Leon Liu">
+  <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+  <meta name="description" content="MonoMuse website redesign project">
+  <title>Buy Tickets | MonoMuse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/style.css">
+  <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+  <header>
+    <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="explore.html">Explore</a>
+      <a href="exhibitions.html">Exhibitions</a>
+      <a id="navselected" href="tickets.html">Buy Tickets</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+  </header>
+
+  <div class="main">
+    <h1>Buy Tickets</h1>
+
+    <p>
+      Tickets can be purchased in advance online or at the museum entrance. All tickets include
+      full access to permanent and temporary exhibitions on the day of your visit.
+    </p>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Ticket Type</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>General</td>
+          <td>Full access for adults (ages 18+). Includes all current exhibitions.</td>
+          <td>$22.00</td>
+        </tr>
+        <tr>
+          <td>Student</td>
+          <td>Valid student ID required. Covers all exhibitions at a discounted rate.</td>
+          <td>$12.00</td>
+        </tr>
+        <tr>
+          <td>Member</td>
+          <td>Free admission for active MonoMuse members. Membership ID required at entry.</td>
+          <td>$0.00</td>
+        </tr>
+        <tr>
+          <td>Child (Ages 5–12)</td>
+          <td>Accompanied by a paying adult. Free for children under 5.</td>
+          <td>$8.00</td>
+        </tr>
+        <tr>
+          <td>Senior (65+)</td>
+          <td>Discounted admission for visitors aged 65 and older.</td>
+          <td>$14.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><a href="checkout.html">Proceed to Checkout</a></p>
+  </div>
+
+  <footer>
+    <p id="copyYear"></p>
+  </footer>
+</body>
+</html>
