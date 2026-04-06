@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Leon Liu">
+  <meta name="keywords" content="Museum Membership, Donation, MonoMuse, Support">
+  <meta name="description" content="Support MonoMuse through membership or donation">
+  <title>Support | MonoMuse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/style.css">
+  <script src="https://code.jquery.com/jquery-4.0.0.min.js"
+    integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
+    crossorigin="anonymous"></script>
+  <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+  <div class="container">
+
+    <header class="header">
+      <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+    </header>
+
+    <nav class="nav_bar" id="navbar">
+      <a href="../index.html">Home</a>
+      <a href="explore.html">Explore</a>
+      <a href="exhibitions.html">Exhibitions</a>
+      <a href="tickets.html">Tickets</a>
+      <a href="support.html">Support</a>
+      <a href="javascript:void(0)" class="hamburger" onclick="toggleNav()" aria-label="Toggle navigation menu">&#9776;</a>
+    </nav>
+
+    <main class="main">
+      <h1>Support MonoMuse</h1>
+      <p>
+        Your support makes it possible for MonoMuse to create innovative exhibitions, offer educational
+        programming, and keep our doors open to the community.
+      </p>
+
+      <h2>Membership</h2>
+      <p>Become a member and enjoy year-round benefits including unlimited free admission, exclusive previews, and discounts at the museum shop.</p>
+
+      <h3>Individual &mdash; $75/year</h3>
+      <ul>
+        <li>Unlimited free admission for one</li>
+        <li>10% museum shop discount</li>
+        <li>Members-only newsletter</li>
+        <li>Early exhibition access</li>
+      </ul>
+      <a class="cta" href="tickets.html" style="margin-bottom:20px;display:inline-block;">Join Now</a>
+
+      <h3 style="margin-top:24px;">Family &mdash; $120/year</h3>
+      <ul>
+        <li>Unlimited admission for two adults + children</li>
+        <li>15% museum shop discount</li>
+        <li>Free guided tours</li>
+        <li>Invitations to family events</li>
+      </ul>
+      <a class="cta cta-gold" href="tickets.html" style="margin-bottom:20px;display:inline-block;">Join Now</a>
+
+      <h3 style="margin-top:24px;">Patron &mdash; $250/year</h3>
+      <ul>
+        <li>All Family benefits</li>
+        <li>VIP opening night access</li>
+        <li>Recognition on donor wall</li>
+        <li>Annual behind-the-scenes tour</li>
+      </ul>
+      <a class="cta" href="tickets.html" style="margin-bottom:20px;display:inline-block;">Join Now</a>
+
+      <h2>Compare Memberships</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Benefit</th>
+            <th>Individual</th>
+            <th>Family</th>
+            <th>Patron</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Free Admission</td>
+            <td>1 adult</td>
+            <td>2 adults + children</td>
+            <td>2 adults + children</td>
+          </tr>
+          <tr>
+            <td>Shop Discount</td>
+            <td>10%</td>
+            <td>15%</td>
+            <td>15%</td>
+          </tr>
+          <tr>
+            <td>Free Guided Tours</td>
+            <td>&mdash;</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>VIP Events</td>
+            <td>&mdash;</td>
+            <td>&mdash;</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Donor Recognition</td>
+            <td>&mdash;</td>
+            <td>&mdash;</td>
+            <td>Yes</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Make a Donation</h2>
+      <p>
+        Not ready for a membership? One-time donations of any amount help us fund exhibitions,
+        maintain our facilities, and provide free programming for schools and underserved communities.
+        Every contribution makes a difference.
+      </p>
+      <p>
+        To donate, please contact us at <strong>donate@monomuse.org</strong> or call
+        <strong>(412) 555-0100</strong>. All donations are tax-deductible.
+      </p>
+
+
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      <p id="copyYear"></p>
+      <span class="footer-tagline">where the singular lives</span>
+    </footer>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+  <meta name="author" content="Leon Liu">
+  <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+  <meta name="description" content="MonoMuse website redesign project">
+  <title>MonoMuse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./static/style.css">
+  <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous" defer></script>
+  <script src="./static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+  <div class="container">
+    <header class="header">
+      <img id="logo" src="./static/monomuselogo.png" alt="MonoMuse Museum Logo">
+    </header>
+
+    <nav class="nav_bar">
+      <a href="index.html">Home</a>
+      <a href="views/explore.html">Explore</a>
+      <a href="views/exhibitions.html">Exhibitions</a>
+      <a href="views/buytickets.html">Buy Tickets</a>
+    </nav>
+
+    <main class="main">
+      <h2 id="greeting">Welcome to MonoMuse</h2>
+
+      <p id="shortIntro">
+        MonoMuse is a contemporary museum dedicated to exploring the intersection of art, technology,
+        and human creativity. Through immersive exhibitions, interactive installations, and rotating
+        collections, MonoMuse invites visitors to discover how digital innovation is transforming the
+        way we create, experience, and understand art.
+      </p>
+      
+
+      <p id="longIntro">
+        Whether you are a first-time visitor or a returning member, our exhibitions offer new
+        perspectives on the role of technology in culture and everyday life. Plan your visit to
+        experience cutting-edge exhibitions, hands-on experiences, and events designed to inspire
+        curiosity and creativity. Our galleries are open Tuesday through Sunday, 10am–6pm, with
+        extended hours on the first Friday of every month. Guided tours are available at 11am and
+        2pm daily and are included with your admission ticket.
+      </p>
+
+      <span id="readMore">Read More</span>
+      <span id="readLess">Read Less</span>
+
+      <br>
+      <a class="cta" href="views/buytickets.html">Buy Tickets</a>
+    </main>
+
+    <footer class="footer">
+      <p id="copyYear"></p>
+    </footer>
+  </div>
+</body>
+</html>

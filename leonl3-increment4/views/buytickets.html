@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<head>
+  <meta name="author" content="Leon Liu">
+  <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+  <meta name="description" content="MonoMuse website redesign project">
+  <title>Buy Tickets | MonoMuse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/style.css">
+  <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+  <div class="container">
+    <header class="header">
+      <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+    </header>
+
+    <nav class="nav_bar">
+      <a href="../index.html">Home</a>
+      <a href="explore.html">Explore</a>
+      <a href="exhibitions.html">Exhibitions</a>
+      <a href="buytickets.html">Buy Tickets</a>
+    </nav>
+
+    <main class="main">
+      <h1>Buy Tickets</h1>
+
+      <p>
+        Tickets can be purchased in advance online or at the museum entrance. All tickets include
+        full access to permanent and temporary exhibitions on the day of your visit.
+        The museum is open Tuesday–Sunday, 10am–6pm.
+      </p>
+
+      <h2>Ticket Prices</h2>
+      <table border="1">
+      <thead>
+        <tr>
+          <th>Ticket Type</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>General</td>
+          <td>Full access for adults (ages 18+). Includes all current exhibitions.</td>
+          <td>$18.00</td>
+        </tr>
+        <tr>
+          <td>Student</td>
+          <td>Valid student ID required. Covers all exhibitions at a discounted rate.</td>
+          <td>$10.00</td>
+        </tr>
+        <tr>
+          <td>Member</td>
+          <td>Discounted admission for active MonoMuse members. Membership ID required at entry.</td>
+          <td>$15.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+      <h2>April 2026 Schedule</h2>
+      <p>Select a date below and click <strong>Buy Now</strong> to begin your purchase.</p>
+
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Day</th>
+            <th>Hours</th>
+            <th>Availability</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>April 8, 2026</td>
+            <td>Tuesday</td>
+            <td>10am – 6pm</td>
+            <td>Available</td>
+            <td><button class="btn-buy" onclick="showPurchaseForm('April 8, 2026')">Buy Now</button></td>
+          </tr>
+          <tr>
+            <td>April 11, 2026</td>
+            <td>Friday</td>
+            <td>10am – 9pm</td>
+            <td>Available</td>
+            <td><button class="btn-buy" onclick="showPurchaseForm('April 11, 2026')">Buy Now</button></td>
+          </tr>
+          <tr>
+            <td>April 15, 2026</td>
+            <td>Tuesday</td>
+            <td>10am – 6pm</td>
+            <td>Available</td>
+            <td><button class="btn-buy" onclick="showPurchaseForm('April 15, 2026')">Buy Now</button></td>
+          </tr>
+          <tr>
+            <td>April 18, 2026</td>
+            <td>Friday</td>
+            <td>10am – 6pm</td>
+            <td>Available</td>
+            <td><button class="btn-buy" onclick="showPurchaseForm('April 18, 2026')">Buy Now</button></td>
+          </tr>
+          <tr>
+            <td>April 22, 2026</td>
+            <td>Tuesday</td>
+            <td>10am – 6pm</td>
+            <td>Available</td>
+            <td><button class="btn-buy" onclick="showPurchaseForm('April 22, 2026')">Buy Now</button></td>
+          </tr>
+          <tr>
+            <td>April 25, 2026</td>
+            <td>Friday</td>
+            <td>10am – 6pm</td>
+            <td>Limited</td>
+            <td><button class="btn-buy" onclick="showPurchaseForm('April 25, 2026')">Buy Now</button></td>
+          </tr>
+          <tr>
+            <td>April 29, 2026</td>
+            <td>Tuesday</td>
+            <td>10am – 6pm</td>
+            <td>Available</td>
+            <td><button class="btn-buy" onclick="showPurchaseForm('April 29, 2026')">Buy Now</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div id="purchaseForm">
+        <h2>Purchase Tickets</h2>
+        <p>Selected date: <strong id="selectedDate"></strong></p>
+
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="ticketType">Ticket Type:</label>
+            <select id="ticketType" name="ticketType" required>
+              <option value="">-- Select a type --</option>
+              <option value="general">General — $18.00</option>
+              <option value="student">Student — $10.00</option>
+              <option value="member">Member — $15.00</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="quantity">Number of Tickets:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="20" placeholder="1" required>
+          </div>
+
+          <div class="form-group">
+            <button type="button" class="cta" onclick="alert('Redirecting to payment system.')">Submit Order</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p id="copyYear"></p>
+    </footer>
+  </div>
+</body>
+</html>

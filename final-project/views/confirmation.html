@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Leon Liu">
+  <meta name="description" content="Order confirmation — MonoMuse ticket purchase">
+  <title>Confirmation | MonoMuse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/style.css">
+  <script src="https://code.jquery.com/jquery-4.0.0.min.js"
+    integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
+    crossorigin="anonymous"></script>
+  <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear(); loadConfirmation();">
+  <div class="container">
+
+    <header class="header">
+      <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+    </header>
+
+    <nav class="nav_bar" id="navbar">
+      <a href="../index.html">Home</a>
+      <a href="explore.html">Explore</a>
+      <a href="exhibitions.html">Exhibitions</a>
+      <a href="tickets.html">Tickets</a>
+      <a href="support.html">Support</a>
+      <a href="javascript:void(0)" class="hamburger" onclick="toggleNav()" aria-label="Toggle navigation menu">&#9776;</a>
+    </nav>
+
+    <main class="main">
+
+      <div class="confirmation-box">
+        <div class="check-icon" aria-hidden="true">&#10003;</div>
+        <h1>Order Confirmed</h1>
+        <p>Thank you for your purchase! Your tickets have been reserved.</p>
+
+        <div class="order-details" id="orderDetails">
+          <p><strong>Visit Date:</strong> <span id="confDate">&mdash;</span></p>
+          <p><strong>Ticket Type:</strong> <span id="confType">&mdash;</span></p>
+          <p><strong>Quantity:</strong> <span id="confQty">&mdash;</span></p>
+          <p><strong>Email:</strong> <span id="confEmail">&mdash;</span></p>
+          <p><strong>Total Cost:</strong> <span id="confTotal" class="text-accent">&mdash;</span></p>
+        </div>
+
+        <p>A confirmation email has been sent to the address provided. Please present your email confirmation at the museum entrance on the day of your visit.</p>
+
+        <a class="cta cta-gold" href="../index.html" style="margin-top:20px;display:inline-block;">Return to Home</a>
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      <p id="copyYear"></p>
+      <span class="footer-tagline">where the singular lives</span>
+    </footer>
+
+  </div>
+</body>
+</html>

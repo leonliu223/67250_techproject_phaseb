@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Leon Liu">
+  <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+  <meta name="description" content="MonoMuse — A contemporary museum at the intersection of art and technology in Pittsburgh, PA">
+  <title>MonoMuse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./static/style.css">
+  <script src="https://code.jquery.com/jquery-4.0.0.min.js"
+    integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
+    crossorigin="anonymous"></script>
+  <script src="./static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+  <div class="container">
+
+    <header class="header">
+      <img id="logo" src="./static/monomuselogo.png" alt="MonoMuse Museum Logo">
+    </header>
+
+    <nav class="nav_bar" id="navbar">
+      <a href="index.html">Home</a>
+      <a href="views/explore.html">Explore</a>
+      <a href="views/exhibitions.html">Exhibitions</a>
+      <a href="views/tickets.html">Tickets</a>
+      <a href="views/support.html">Support</a>
+      <a href="javascript:void(0)" class="hamburger" onclick="toggleNav()" aria-label="Toggle navigation menu">&#9776;</a>
+    </nav>
+
+    <main class="main">
+      <h1 id="greeting">Welcome to MonoMuse</h1>
+
+
+      <img src="./static/future.png" alt="Futuristic digital art installation at MonoMuse" style="max-width:100%;height:auto;display:block;margin-bottom:16px;border-radius:8px;">
+
+      <p id="shortIntro">
+        MonoMuse is a contemporary museum dedicated to exploring the intersection of art, technology,
+        and human creativity. Through immersive exhibitions, interactive installations, and rotating
+        collections, MonoMuse invites visitors to discover how digital innovation is transforming the
+        way we create, experience, and understand art.
+      </p>
+
+      <p id="longIntro">
+        Whether you are a first-time visitor or a returning member, our exhibitions offer new
+        perspectives on the role of technology in culture and everyday life. Plan your visit to
+        experience cutting-edge exhibitions, hands-on experiences, and events designed to inspire
+        curiosity and creativity. Our galleries are open Tuesday through Sunday, 10 AM &ndash; 6 PM,
+        with extended hours on the first Friday of every month. Guided tours are available at 11 AM
+        and 2 PM daily and are included with your admission ticket.
+      </p>
+
+      <span id="readMore">Read More</span>
+      <span id="readLess">Read Less</span>
+
+      <br>
+      <a class="cta cta-gold" href="views/tickets.html">Buy Tickets</a>
+
+
+      <h2>Plan Your Visit</h2>
+      <div class="visitor-info">
+        <div class="visitor-info-item">
+          <h3>Hours</h3>
+          <p>Tuesday &ndash; Sunday<br>10:00 AM &ndash; 6:00 PM<br>Extended hours first Friday of every month</p>
+        </div>
+        <div class="visitor-info-item">
+          <h3>Location</h3>
+          <p>5000 Forbes Avenue<br>Pittsburgh, PA 15213</p>
+        </div>
+        <div class="visitor-info-item">
+          <h3>Admission</h3>
+          <p>All tickets: $18<br>Student &amp; Member discounts available<br><a href="views/tickets.html">Buy Tickets</a></p>
+        </div>
+        <div class="visitor-info-item">
+          <h3>Contact</h3>
+          <p>info@monomuse.org<br>(412) 555-0100</p>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      <p id="copyYear"></p>
+      <span class="footer-tagline">where the singular lives</span>
+    </footer>
+
+  </div>
+</body>
+</html>

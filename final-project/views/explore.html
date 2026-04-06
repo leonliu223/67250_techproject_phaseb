@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Leon Liu">
+  <meta name="keywords" content="Museum, About, Gallery, Map, Pittsburgh">
+  <meta name="description" content="Explore MonoMuse — Our mission, gallery, history, and location">
+  <title>Explore | MonoMuse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="../static/style.css">
+  <script src="https://code.jquery.com/jquery-4.0.0.min.js"
+    integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+  <div class="container">
+
+    <header class="header">
+      <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+    </header>
+
+    <nav class="nav_bar" id="navbar">
+      <a href="../index.html">Home</a>
+      <a href="explore.html">Explore</a>
+      <a href="exhibitions.html">Exhibitions</a>
+      <a href="tickets.html">Tickets</a>
+      <a href="support.html">Support</a>
+      <a href="javascript:void(0)" class="hamburger" onclick="toggleNav()" aria-label="Toggle navigation menu">&#9776;</a>
+    </nav>
+
+    <main class="main">
+      <h1>Explore MonoMuse</h1>
+
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <div class="slide active">
+          <img src="../static/future.png" alt="Futuristic digital art piece displayed in the MonoMuse gallery">
+          <p class="slide-caption">The Future of Digital Art &mdash; Permanent Collection</p>
+        </div>
+        <div class="slide">
+          <img src="../static/inter.jpg" alt="Visitors interacting with a light-based art installation">
+          <p class="slide-caption">Interactive Installation Space &mdash; Main Hall</p>
+        </div>
+        <div class="slide">
+          <img src="../static/future2.jpg" alt="Hands-on experience at the MonoMuse Innovation Lab">
+          <p class="slide-caption">Hands-On Innovation Lab &mdash; Open to All Visitors</p>
+        </div>
+        <button class="gallery-prev" aria-label="Previous slide">&#10094;</button>
+        <button class="gallery-next" aria-label="Next slide">&#10095;</button>
+      </div>
+
+      <h2>Our Mission</h2>
+      <p>
+        MonoMuse exists to bridge the gap between art and technology, making cutting-edge creative
+        experiences accessible to everyone. We believe that art has the power to illuminate the human
+        condition, and that technology opens new dimensions for storytelling, expression, and
+        connection. Our mission is to inspire curiosity, foster innovation, and cultivate a deep
+        appreciation for creativity in all its forms.
+      </p>
+
+      <h2>Who We Serve</h2>
+      <p>
+        MonoMuse welcomes visitors of all ages and backgrounds &mdash; from students and educators to
+        professional artists, technologists, and lifelong learners. Our programming is designed to
+        engage curious minds at every level, with dedicated experiences for school groups, families,
+        and adult audiences.
+      </p>
+
+      <h2>Our History</h2>
+      <p>
+        Founded in 2008, MonoMuse began as a small experimental gallery in Pittsburgh focused on
+        digital art and interactive media. Over the years it has grown into a nationally recognized
+        contemporary museum with a permanent collection spanning generative art, human-computer
+        interaction, and immersive installation.
+      </p>
+
+      <h3>Milestones</h3>
+      <ul>
+        <li>2008 &mdash; MonoMuse founded as a digital art gallery in Pittsburgh</li>
+        <li>2015 &mdash; Expanded to include a permanent collection of generative art</li>
+        <li>2025 &mdash; Launched the Interactive Innovation Lab for hands-on visitor experiences</li>
+      </ul>
+
+      <h2>Find Us</h2>
+      <p>5000 Forbes Avenue, Pittsburgh, PA 15213. Use the interactive map below to plan your visit.</p>
+      <div id="map"></div>
+
+    </main>
+
+    <footer class="footer">
+      <p id="copyYear"></p>
+      <span class="footer-tagline">where the singular lives</span>
+    </footer>
+
+  </div>
+</body>
+</html>

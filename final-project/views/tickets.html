@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Leon Liu">
+  <meta name="keywords" content="Museum Tickets, MonoMuse Checkout, Buy Tickets">
+  <meta name="description" content="Purchase tickets for MonoMuse — all tickets $18 each">
+  <title>Tickets | MonoMuse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/style.css">
+  <script src="https://code.jquery.com/jquery-4.0.0.min.js"
+    integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
+    crossorigin="anonymous"></script>
+  <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+  <div class="container">
+
+    <header class="header">
+      <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+    </header>
+
+    <nav class="nav_bar" id="navbar">
+      <a href="../index.html">Home</a>
+      <a href="explore.html">Explore</a>
+      <a href="exhibitions.html">Exhibitions</a>
+      <a href="tickets.html">Tickets</a>
+      <a href="support.html">Support</a>
+      <a href="javascript:void(0)" class="hamburger" onclick="toggleNav()" aria-label="Toggle navigation menu">&#9776;</a>
+    </nav>
+
+    <main class="main">
+      <h1>Buy Tickets</h1>
+      <p>
+        All tickets are <strong>$18.00 each</strong> and include full access to all current exhibitions.
+        The museum is open Tuesday &ndash; Sunday, 10 AM &ndash; 6 PM.
+      </p>
+
+      <h2>Ticket Pricing</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>General</td>
+            <td>Full access for adults (ages 18+). Includes all current exhibitions.</td>
+            <td>$18.00</td>
+          </tr>
+          <tr>
+            <td>Student</td>
+            <td>Valid student ID required at entry.</td>
+            <td>$18.00</td>
+          </tr>
+          <tr>
+            <td>Member</td>
+            <td>Active MonoMuse membership ID required at entry.</td>
+            <td>$18.00</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Checkout</h2>
+      <div class="checkout-form">
+
+        <div class="form-group">
+          <label for="visitDate">Visit Date <span class="text-accent">*</span></label>
+          <input type="date" id="visitDate" name="visitDate" required>
+          <p class="error-msg">Please select a visit date.</p>
+        </div>
+
+        <div class="form-group">
+          <label for="ticketType">Ticket Type <span class="text-accent">*</span></label>
+          <select id="ticketType" name="ticketType" required>
+            <option value="">-- Select a type --</option>
+            <option value="general">General &mdash; $18.00</option>
+            <option value="student">Student &mdash; $18.00</option>
+            <option value="member">Member &mdash; $18.00</option>
+          </select>
+          <p class="error-msg">Please select a ticket type.</p>
+        </div>
+
+        <div class="form-group">
+          <label for="quantity">Number of Tickets (1&ndash;10) <span class="text-accent">*</span></label>
+          <input type="number" id="quantity" name="quantity" min="1" max="10" value="1"
+            required oninput="updateTotal()">
+          <p class="error-msg">Enter a quantity between 1 and 10.</p>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address <span class="text-accent">*</span></label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          <p class="error-msg">Please enter a valid email address.</p>
+        </div>
+
+        <div class="form-group">
+          <label for="zipCode">Zip Code <span style="color:rgba(245,245,247,0.55);font-size:0.85rem;">(optional)</span></label>
+          <input type="text" id="zipCode" name="zipCode" placeholder="e.g. 15213"
+            maxlength="5" inputmode="numeric">
+          <p class="error-msg">Zip code must be exactly 5 digits.</p>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="mailingList" name="mailingList">
+          <label for="mailingList">Join our mailing list for updates and special offers</label>
+        </div>
+
+        <div class="price-display">
+          <p class="total-label">Estimated Total</p>
+          <p class="total-amount" id="totalAmount">$18.00</p>
+        </div>
+
+        <button type="button" class="cta cta-gold" onclick="placeOrder()"
+          style="width:100%;text-align:center;">Place Order</button>
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p id="copyYear"></p>
+      <span class="footer-tagline">where the singular lives</span>
+    </footer>
+
+  </div>
+</body>
+</html>

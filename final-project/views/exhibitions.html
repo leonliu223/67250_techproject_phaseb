@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Leon Liu">
+  <meta name="keywords" content="Museum, Exhibitions, Digital Art, Technology">
+  <meta name="description" content="Current exhibitions at MonoMuse featuring immersive digital art and interactive media">
+  <title>Exhibitions | MonoMuse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/style.css">
+  <script src="https://code.jquery.com/jquery-4.0.0.min.js"
+    integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
+    crossorigin="anonymous"></script>
+  <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+  <div class="container">
+
+    <header class="header">
+      <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+    </header>
+
+    <nav class="nav_bar" id="navbar">
+      <a href="../index.html">Home</a>
+      <a href="explore.html">Explore</a>
+      <a href="exhibitions.html">Exhibitions</a>
+      <a href="tickets.html">Tickets</a>
+      <a href="support.html">Support</a>
+      <a href="javascript:void(0)" class="hamburger" onclick="toggleNav()" aria-label="Toggle navigation menu">&#9776;</a>
+    </nav>
+
+    <main class="main">
+      <h1>Current Exhibitions</h1>
+      <p>Explore our rotating exhibitions featuring international artists working at the intersection of art and technology.</p>
+
+      <h2>Echoes in the Machine</h2>
+      <p><em>On view through June 2026</em></p>
+      <p>
+        Echoes in the Machine is a large-scale immersive installation that explores the relationship
+        between human emotion and artificial intelligence. Visitors walk through a responsive
+        environment where generative algorithms translate movement and sound into evolving visual
+        landscapes. The exhibition asks a provocative question: can a machine learn to feel? Featuring
+        works by five international artists working at the intersection of neural networks and
+        sculptural media, this exhibition challenges assumptions about creativity, empathy, and what
+        it means to be alive in a digital age.
+      </p>
+
+      <h2>Pixel &amp; Pigment: A History of Digital Color</h2>
+      <p><em>On view through September 2026</em></p>
+      <p>
+        From the early days of cathode-ray monitors to today&rsquo;s HDR displays and computational
+        photography, color has been central to how we process and share visual information. Pixel
+        &amp; Pigment traces the surprising history of digital color theory through archival
+        materials, interactive demos, and original artworks. Visitors can experiment with color
+        mixing algorithms, explore the evolution of screen technology, and see how artists have used
+        digital tools to push the boundaries of chromatic expression across five decades.
+      </p>
+
+      <h2>Unstructured Data</h2>
+      <p><em>Opening April 2026</em></p>
+      <p>
+        Unstructured Data is a group exhibition featuring eight emerging artists who use raw data &mdash;
+        sensor readings, social media streams, satellite imagery, and financial records &mdash; as their
+        primary artistic medium. By transforming information into sound, sculpture, and moving image,
+        these artists reveal hidden patterns in the world around us. The exhibition invites visitors
+        to reconsider the aesthetics of information overload and the quiet beauty embedded in
+        everyday data.
+      </p>
+
+      <h2>Featured Video</h2>
+      <p>Take a virtual tour of contemporary museum installations from around the world.</p>
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/vJnPsZNmrNo?si=kOoWfuMYDBb7b8EH&amp;controls=0"
+          title="YouTube video player — Museum virtual tour"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      <p id="copyYear"></p>
+      <span class="footer-tagline">where the singular lives</span>
+    </footer>
+
+  </div>
+</body>
+</html>
