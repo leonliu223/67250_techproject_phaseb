@@ -70,7 +70,7 @@ nav a {
 
 nav a:hover {
   color: #1a1714;
-  border-color: #000000;
+  border-color: #1a1714;
 }
 
 .nav_bar a {
@@ -468,19 +468,19 @@ tr:last-child td {
   height: 420px;
   width: 100%;
   margin-top: 12px;
-  border: 1px solid #000000;
+  border: 1px solid #1a1714;
   background: #e8e2d8;
 }
 
 #map * {
   background: transparent;
-  color: #000000;
+  color: #1a1714;
   font-size: 0.875rem;
 }
 
 .leaflet-popup-content-wrapper {
   background: white !important;
-  color: black;
+  color: #1a1714;
 }
 
 .leaflet-popup-tip {
@@ -501,7 +501,7 @@ tr:last-child td {
 }
 
 .hamburger:hover {
-  border-color: #000000;
+  border-color: #1a1714;
 }
 
 
@@ -527,7 +527,7 @@ tr:last-child td {
     display: block;
     width: 100%;
     padding: 10px 12px;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #1a1714;
   }
 
   .nav_bar.responsive .hamburger {
